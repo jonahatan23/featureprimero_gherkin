@@ -1,0 +1,19 @@
+feature: sincrinizacion a la ubicacion del usuario como estudiante de SSMap quiero sincrinizar mi ubicacion actual para obtener informacion de algun incidente cerca.
+Scenario: Usuario sincriniza su ubicacion actual.
+ dado que el "<new user>" se encuentra en el menu principal  y  activa el swich "< location_on>"
+cuando le da al boton de "<Accept>"
+entonces la aplicacion mostrara "<Box>" de un mensaje " se ha activado la  ubicacion
+ejemplos
+|new_user|Location_on|Accept|Box
+|David Alejando, Ubicacion actual  encendida, Aceptar
+
+featureprimero_gherkin
+
+feature: Guardar informacion interesante como usuario  quiero acceder y gardar recetas en tiempo real
+Scenario: usuario guardar receta tiempo real.
+ dado que el "<new user>" accede al menu principal y activa un  swuch "<Save_recipe>"
+cuando le da el boton de "<Accept>"
+entonces la aplicacion mostrara "<Box>" de un mensaje  “se le abrirá la alta gana de información de recetas ”
+ejmeplos:
+|new_user|Save_recipe|Accept|Box
+|cliente, guardar receta en tiempo real, Aceptar
